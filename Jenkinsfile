@@ -24,8 +24,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 bat '''
-                if not exist C:\\deploy-demo mkdir C:\\deploy-demo
-                copy index.html C:\\deploy-demo
+                if not exist D:\\Capgeminie\\DevOps\\demo1\\deploy-demo mkdir D:\\Capgeminie\\DevOps\\demo1\\deploy-demo
+                copy hello.html D:\\Capgeminie\\DevOps\\demo1\\deploy-demo
                 '''
             }
         }
